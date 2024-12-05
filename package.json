@@ -1,0 +1,47 @@
+{
+  "name": "segno-learning",
+  "version": "1.0.0",
+  "description": "An application enhancing music lessons, allowing teachers and students to share goals and resources.",
+  "main": "index.ts",
+  "scripts": {
+    "build:client": "webpack --config webpack.config.js --name client",
+    "build:server": "webpack --config webpack.config.js --mode development --name server",
+    "server": "npm run build:server && npm run watch:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scb-segno/segno-learning.git"
+  },
+  "author": "Sean C. Brazil",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/scb-segno/segno-learning/issues"
+  },
+  "homepage": "https://github.com/scb-segno/segno-learning#readme",
+  "devDependencies": {
+    "@types/busboy": "^1.5.4",
+    "@types/express": "^4.17.21",
+    "@types/formidable": "^3.4.5",
+    "@types/graphql": "^14.5.0",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^22.6.1",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.2",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "apollo-server-express": "^3.13.0",
+    "busboy": "^1.6.0",
+    "express": "^4.21.0",
+    "express-graphql": "^0.12.0",
+    "formidable": "^3.5.1",
+    "graphql": "^15.9.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.6.3"
+  }
+}
